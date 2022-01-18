@@ -1,4 +1,4 @@
-1. 모든 item에 이벤트 핸들러 등록
+### 1. 모든 item에 이벤트 핸들러 등록
 
 ```javascript
 const items = document.querySelectorAll('.item');
@@ -19,7 +19,7 @@ items.forEach(item => {
 
 <br> 
  
-2. wrapper, body 이벤트 핸들러 2개 등록
+### 2. wrapper, body 이벤트 핸들러 2개 등록
 ```javascript
 const wrapper = document.querySelector('.wrapper');
 const items = document.querySelectorAll('.item');
@@ -49,12 +49,12 @@ elem.classList.remove('open');
 
 - **`e.stopPropagation()`** VS **`e.preventDefault()`**
 - 이벤트 전파
-  - 캡쳐링: 이벤트가 상위 요소 -> 하위 요소 방향으로 전파
-  - 버블링: 이벤트가 하위 요소 -> 상위 요소 방향으로 전파
+  - `캡쳐링`: 이벤트가 상위 요소 -> 하위 요소 방향으로 전파
+  - `버블링`: 이벤트가 하위 요소 -> 상위 요소 방향으로 전파
 
 <br>
 
-3. 이벤트 핸들러 1개만 등록
+### 3. 이벤트 핸들러 1개만 등록
 ```javascript
 const items = document.querySelectorAll('.item');
 
